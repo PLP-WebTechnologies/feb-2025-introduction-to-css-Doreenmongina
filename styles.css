@@ -148,3 +148,21 @@ input[type="image"] {
         margin: 10px 0;
     }
 }
+
+/* Style for the footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    font-style: italic;  /* Makes the footer text italic */
+}
