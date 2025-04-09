@@ -1,0 +1,150 @@
+/* General Body and Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #3498db;
+    margin-top: 30px;
+    font-size: 2.5em;
+}
+
+/* Content Section Styling */
+.content {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.content p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+/* Form Styling */
+.form-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.1em;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-input,
+.form-textarea,
+.form-select,
+.form-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+.form-input[type="checkbox"],
+.form-input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.form-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Select Styling */
+.form-select {
+    font-size: 1em;
+    padding: 10px;
+}
+
+/* Button Styling */
+.form-button {
+    background-color: #7c34db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+}
+
+.form-button:hover {
+    background-color: green;
+}
+
+/* Form Actions Section */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-actions .form-button {
+    flex: 1;
+    margin: 5px;
+}
+
+/* Input Focus Styling */
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+    border-color: #34db7a;
+    outline: none;
+}
+
+/* Reset Styling */
+input[type="reset"] {
+    background-color: #475c0f;
+}
+
+input[type="reset"]:hover {
+    background-color: #2d083b;
+}
+
+/* Input Image Styling */
+input[type="image"] {
+    border: none;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .content, .form-container {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions .form-button {
+        margin: 10px 0;
+    }
+}

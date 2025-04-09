@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="main-heading">APPLY CSS STYLE TO THIS PAGE</h1>
+   <div class="content"> 
+    <p>CSS (Cascading Style Sheets) is a stylesheet language used for describing the presentation of a document written in HTML or XML. It controls the layout of multiple web pages all at once.</p>
+    <p>CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+    <p>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.</p>
+    <p>CSS can be applied to HTML documents in three ways: inline styles, internal stylesheets, and external stylesheets.</p>
+    </div>
+    
+    <form action="" class="form-container">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="form-input"><br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="example@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" class="form-input" 
+                   maxlength="12" 
+                   pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,12}$" 
+                   title="Password must be between 6 and 12 characters, and include at least one uppercase letter, one lowercase letter, and one number."
+                   required>
+        </div>
+
+        <div class="form-group">
+            <label for="subscribe">Subscribe to newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes"><br><br>
+        </div>
+
+        <div class="form-group">
+            <label>Choose an option:</label><br>
+            <input type="radio" id="option1" name="options" value="option1">
+            <label for="option1">Option 1</label><br>
+            <input type="radio" id="option2" name="options" value="option2">
+            <label for="option2">Option 2</label><br>
+            <input type="radio" id="option3" name="options" value="option3">
+            <label for="option3">Option 3</label><br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" class="form-textarea"></textarea><br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="color">Choose a color:</label>
+            <input type="color" id="color" name="color"><br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="date">Choose a date:</label>
+            <input type="date" id="date" name="date"><br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="time">Choose a time:</label>
+            <input type="time" id="time" name="time"><br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="number">Enter a number:</label>
+            <input type="number" id="number" name="number" min="1" max="10"><br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="range">Choose a range:</label>
+            <input type="range" id="range" name="range" min="1" max="100"><br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="file">Upload a file:</label>
+            <input type="file" id="file" name="file"><br><br>
+        </div>
+
+
+        <div class="form-group">
+            <label for="dropdown">Choose an option:</label>
+            <select id="dropdown" name="dropdown" class="form-select">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+                <option value="option4">Option 4</option>
+                <option value="option5">Option 5</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search"><br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="tel">Telephone:</label>
+            <input type="tel" id="tel" name="tel"><br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="url">Website:</label>
+            <input type="url" id="url" name="url"><br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="datetime-local">Choose a date and time:</label>
+            <input type="datetime-local" id="datetime-local" name="datetime-local"><br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="month">Choose a month:</label>
+            <input type="month" id="month" name="month"><br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="week">Choose a week:</label>
+            <input type="week" id="week" name="week"><br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="file">Upload a file:</label>
+            <input type="file" id="file" name="file" class="form-input"><br><br>
+        </div>
+
+        <div class="form-actions">
+            <input type="submit" value="Submit" class="form-button">
+            <input type="reset" value="Reset" class="form-button">
+            <input type="button" value="Click Me" onclick="alert('Button clicked!')" class="form-button">
+        </div>
+    </form>
+</body>
+</html>
